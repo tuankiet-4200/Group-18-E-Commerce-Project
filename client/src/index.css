@@ -8,6 +8,8 @@
 body {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
+    background: #f5f0f0;
+    color: rgba(0,0,0,0.8);
 }
 
 .bg-primary {
