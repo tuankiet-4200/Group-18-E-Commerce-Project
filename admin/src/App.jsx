@@ -29,6 +29,26 @@ function App() {
     },
   ]);
 
+  const router = createBrowserRouter([
+    {
+      path:"/",
+      exact:true,
+      element: (
+        <>
+          <section className='main'>
+            <Header/>
+            <div className='contentMain flex'>
+              <div className='sidebarWrapper w-[25%]'>
+                <Sidebar/>
+              </div>
+            </div>
+          </section>
+        </>
+      ),
+      
+    },
+  ]);
+
   return (
     <>
       <Header onToggleSidebar={() => setSidebarOpen(s => !s)} />
